@@ -1,0 +1,115 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+  content %}
+  <style>
+    /* Custom CSS for the narrow form */
+    .narrow-form {
+      max-width: 50%;
+      margin: auto; /* Center the form */
+    }
+  </style>
+  <br />
+  <br />
+  <br />
+  <div class="banner" >
+    <div class="container">
+      <div class="row align-items-center-topline">
+        <div class="col-12 col-lg-7 text-center flex-item grid-margin" data-aos="fade-right">
+          <img src="static/images/Group171.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-12 col-lg-5 flex-item grid-margin" data-aos="fade-left">
+          <br/>
+          <h3 class="m-0">Manage your address<br>from one account.</h3>
+          <div class="col-lg-9 col-xl-8 p-0">
+            <p class="py-4 m-0 text-muted">Power-packed with impressive features and well-optimized, this template is designed to provide the best performance in all circumstances.</p>
+            <p class="pb-2 font-weight-medium text-muted">Its smart features make it a powerful stand-alone website building tool.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <form method="POST" class="narrow-form">
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstName"
+        name="firstName"
+        placeholder="Enter first name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password1">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password1"
+        name="password1"
+        placeholder="Enter password"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password2">Password (Confirm)</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password2"
+        name="password2"
+        placeholder="Confirm password"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Create Account</button>
+  </form>
+  <br/>
+  <br/>
+  <body>
+    <button id="checkout-ride" class="btn btn-primary">Riding</button>
+    <button id="checkout-walk" class="btn btn-primary">Walking</button>
+  </body>
+  <section class="features-overview" id="features-section" >
+    <div class="content-header">
+      <h2>How it works</h2>
+      <h6 class="section-subtitle text-muted">One theme that serves as an easy-to-use operational toolkit<br>that meets customer's needs.</h6>
+    </div>
+    <div class="d-md-flex justify-content-center">
+      <div class="grid-margin d-flex justify-content-start">
+        <div class="features-width">
+          <img src="static/images/Group12.svg" alt="" class="img-icons">
+          <h5 class="py-3">Create an account<br>with Douglas</h5>
+          <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+          <a href="#"><p class="readmore-link">Readmore</p></a>
+        </div>
+      </div>
+      <div class="grid-margin d-flex justify-content-center">
+        <div class="features-width">
+          <img src="static/images/Group7.svg" alt="" class="img-icons">
+          <h5 class="py-3">Add an<br>address</h5>
+          <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+          <a href="#"><p class="readmore-link">Readmore</p></a>
+        </div>
+      </div>
+      <div class="grid-margin d-flex justify-content-end">
+        <div class="features-width">
+          <img src="static/images/Group5.svg" alt="" class="img-icons">
+          <h5 class="py-3">Your address updates<br>on all your other accounts</h5>
+          <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+          <a href="#"><p class="readmore-link">Readmore</p></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
